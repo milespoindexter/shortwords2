@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3581440153DF950007C4E2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A358143F153DF950007C4E2E /* UIKit.framework */; };
+		A3581442153DF950007C4E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3581441153DF950007C4E2E /* Foundation.framework */; };
+		A3581444153DF950007C4E2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3581443153DF950007C4E2E /* CoreGraphics.framework */; };
+		A358144A153DF950007C4E2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3581448153DF950007C4E2E /* InfoPlist.strings */; };
+		A358144C153DF950007C4E2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A358144B153DF950007C4E2E /* main.m */; };
+		A3581450153DF950007C4E2E /* ShortWordsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A358144F153DF950007C4E2E /* ShortWordsAppDelegate.m */; };
+		A3581453153DF950007C4E2E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3581451153DF950007C4E2E /* MainStoryboard.storyboard */; };
+		A3581456153DF950007C4E2E /* ShortWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581455153DF950007C4E2E /* ShortWordsViewController.m */; };
+		A358145E153DF950007C4E2E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A358145D153DF950007C4E2E /* SenTestingKit.framework */; };
+		A358145F153DF950007C4E2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A358143F153DF950007C4E2E /* UIKit.framework */; };
+		A3581460153DF950007C4E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3581441153DF950007C4E2E /* Foundation.framework */; };
+		A3581468153DF950007C4E2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3581466153DF950007C4E2E /* InfoPlist.strings */; };
+		A358146B153DF950007C4E2E /* ShortWords2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A358146A153DF950007C4E2E /* ShortWords2Tests.m */; };
+		A358148E153DF99C007C4E2E /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581476153DF99C007C4E2E /* NSObject+SBJson.m */; };
+		A358148F153DF99C007C4E2E /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581476153DF99C007C4E2E /* NSObject+SBJson.m */; };
+		A3581490153DF99C007C4E2E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581479153DF99C007C4E2E /* SBJsonParser.m */; };
+		A3581491153DF99C007C4E2E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581479153DF99C007C4E2E /* SBJsonParser.m */; };
+		A3581492153DF99C007C4E2E /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A358147B153DF99C007C4E2E /* SBJsonStreamParser.m */; };
+		A3581493153DF99C007C4E2E /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A358147B153DF99C007C4E2E /* SBJsonStreamParser.m */; };
+		A3581494153DF99C007C4E2E /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A358147D153DF99C007C4E2E /* SBJsonStreamParserAccumulator.m */; };
+		A3581495153DF99C007C4E2E /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A358147D153DF99C007C4E2E /* SBJsonStreamParserAccumulator.m */; };
+		A3581496153DF99C007C4E2E /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A358147F153DF99C007C4E2E /* SBJsonStreamParserAdapter.m */; };
+		A3581497153DF99C007C4E2E /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A358147F153DF99C007C4E2E /* SBJsonStreamParserAdapter.m */; };
+		A3581498153DF99C007C4E2E /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581481153DF99C007C4E2E /* SBJsonStreamParserState.m */; };
+		A3581499153DF99C007C4E2E /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581481153DF99C007C4E2E /* SBJsonStreamParserState.m */; };
+		A358149A153DF99C007C4E2E /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581483153DF99C007C4E2E /* SBJsonStreamWriter.m */; };
+		A358149B153DF99C007C4E2E /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581483153DF99C007C4E2E /* SBJsonStreamWriter.m */; };
+		A358149C153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581485153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.m */; };
+		A358149D153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581485153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.m */; };
+		A358149E153DF99C007C4E2E /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581487153DF99C007C4E2E /* SBJsonStreamWriterState.m */; };
+		A358149F153DF99C007C4E2E /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581487153DF99C007C4E2E /* SBJsonStreamWriterState.m */; };
+		A35814A0153DF99C007C4E2E /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581489153DF99C007C4E2E /* SBJsonTokeniser.m */; };
+		A35814A1153DF99C007C4E2E /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3581489153DF99C007C4E2E /* SBJsonTokeniser.m */; };
+		A35814A2153DF99C007C4E2E /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = A358148B153DF99C007C4E2E /* SBJsonUTF8Stream.m */; };
+		A35814A3153DF99C007C4E2E /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = A358148B153DF99C007C4E2E /* SBJsonUTF8Stream.m */; };
+		A35814A4153DF99C007C4E2E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A358148D153DF99C007C4E2E /* SBJsonWriter.m */; };
+		A35814A5153DF99C007C4E2E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A358148D153DF99C007C4E2E /* SBJsonWriter.m */; };
+		A35814A8153DFA1B007C4E2E /* ShortWordsBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = A35814A7153DFA1B007C4E2E /* ShortWordsBrain.m */; };
+		A35814A9153DFA1B007C4E2E /* ShortWordsBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = A35814A7153DFA1B007C4E2E /* ShortWordsBrain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3581461153DF950007C4E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3581432153DF950007C4E2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A358143A153DF950007C4E2E;
+			remoteInfo = ShortWords2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A358143B153DF950007C4E2E /* ShortWords2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortWords2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A358143F153DF950007C4E2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A3581441153DF950007C4E2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A3581443153DF950007C4E2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3581447153DF950007C4E2E /* ShortWords2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShortWords2-Info.plist"; sourceTree = "<group>"; };
+		A3581449153DF950007C4E2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A358144B153DF950007C4E2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A358144D153DF950007C4E2E /* ShortWords2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShortWords2-Prefix.pch"; sourceTree = "<group>"; };
+		A358144E153DF950007C4E2E /* ShortWordsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortWordsAppDelegate.h; sourceTree = "<group>"; };
+		A358144F153DF950007C4E2E /* ShortWordsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortWordsAppDelegate.m; sourceTree = "<group>"; };
+		A3581452153DF950007C4E2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A3581454153DF950007C4E2E /* ShortWordsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortWordsViewController.h; sourceTree = "<group>"; };
+		A3581455153DF950007C4E2E /* ShortWordsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortWordsViewController.m; sourceTree = "<group>"; };
+		A358145C153DF950007C4E2E /* ShortWords2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortWords2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A358145D153DF950007C4E2E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A3581465153DF950007C4E2E /* ShortWords2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShortWords2Tests-Info.plist"; sourceTree = "<group>"; };
+		A3581467153DF950007C4E2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3581469153DF950007C4E2E /* ShortWords2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortWords2Tests.h; sourceTree = "<group>"; };
+		A358146A153DF950007C4E2E /* ShortWords2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortWords2Tests.m; sourceTree = "<group>"; };
+		A3581475153DF99C007C4E2E /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		A3581476153DF99C007C4E2E /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		A3581477153DF99C007C4E2E /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		A3581478153DF99C007C4E2E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		A3581479153DF99C007C4E2E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		A358147A153DF99C007C4E2E /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		A358147B153DF99C007C4E2E /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		A358147C153DF99C007C4E2E /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		A358147D153DF99C007C4E2E /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		A358147E153DF99C007C4E2E /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		A358147F153DF99C007C4E2E /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		A3581480153DF99C007C4E2E /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		A3581481153DF99C007C4E2E /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		A3581482153DF99C007C4E2E /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		A3581483153DF99C007C4E2E /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		A3581484153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		A3581485153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		A3581486153DF99C007C4E2E /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		A3581487153DF99C007C4E2E /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		A3581488153DF99C007C4E2E /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		A3581489153DF99C007C4E2E /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		A358148A153DF99C007C4E2E /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		A358148B153DF99C007C4E2E /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		A358148C153DF99C007C4E2E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		A358148D153DF99C007C4E2E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		A35814A6153DFA1B007C4E2E /* ShortWordsBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortWordsBrain.h; sourceTree = "<group>"; };
+		A35814A7153DFA1B007C4E2E /* ShortWordsBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortWordsBrain.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3581438153DF950007C4E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3581440153DF950007C4E2E /* UIKit.framework in Frameworks */,
+				A3581442153DF950007C4E2E /* Foundation.framework in Frameworks */,
+				A3581444153DF950007C4E2E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3581458153DF950007C4E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A358145E153DF950007C4E2E /* SenTestingKit.framework in Frameworks */,
+				A358145F153DF950007C4E2E /* UIKit.framework in Frameworks */,
+				A3581460153DF950007C4E2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3581430153DF950007C4E2E = {
+			isa = PBXGroup;
+			children = (
+				A3581474153DF969007C4E2E /* SBJson */,
+				A3581445153DF950007C4E2E /* ShortWords2 */,
+				A3581463153DF950007C4E2E /* ShortWords2Tests */,
+				A358143E153DF950007C4E2E /* Frameworks */,
+				A358143C153DF950007C4E2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A358143C153DF950007C4E2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A358143B153DF950007C4E2E /* ShortWords2.app */,
+				A358145C153DF950007C4E2E /* ShortWords2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A358143E153DF950007C4E2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A358143F153DF950007C4E2E /* UIKit.framework */,
+				A3581441153DF950007C4E2E /* Foundation.framework */,
+				A3581443153DF950007C4E2E /* CoreGraphics.framework */,
+				A358145D153DF950007C4E2E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3581445153DF950007C4E2E /* ShortWords2 */ = {
+			isa = PBXGroup;
+			children = (
+				A358144E153DF950007C4E2E /* ShortWordsAppDelegate.h */,
+				A358144F153DF950007C4E2E /* ShortWordsAppDelegate.m */,
+				A3581451153DF950007C4E2E /* MainStoryboard.storyboard */,
+				A3581454153DF950007C4E2E /* ShortWordsViewController.h */,
+				A3581455153DF950007C4E2E /* ShortWordsViewController.m */,
+				A3581446153DF950007C4E2E /* Supporting Files */,
+				A35814A6153DFA1B007C4E2E /* ShortWordsBrain.h */,
+				A35814A7153DFA1B007C4E2E /* ShortWordsBrain.m */,
+			);
+			path = ShortWords2;
+			sourceTree = "<group>";
+		};
+		A3581446153DF950007C4E2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3581447153DF950007C4E2E /* ShortWords2-Info.plist */,
+				A3581448153DF950007C4E2E /* InfoPlist.strings */,
+				A358144B153DF950007C4E2E /* main.m */,
+				A358144D153DF950007C4E2E /* ShortWords2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3581463153DF950007C4E2E /* ShortWords2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A3581469153DF950007C4E2E /* ShortWords2Tests.h */,
+				A358146A153DF950007C4E2E /* ShortWords2Tests.m */,
+				A3581464153DF950007C4E2E /* Supporting Files */,
+			);
+			path = ShortWords2Tests;
+			sourceTree = "<group>";
+		};
+		A3581464153DF950007C4E2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3581465153DF950007C4E2E /* ShortWords2Tests-Info.plist */,
+				A3581466153DF950007C4E2E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3581474153DF969007C4E2E /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				A3581475153DF99C007C4E2E /* NSObject+SBJson.h */,
+				A3581476153DF99C007C4E2E /* NSObject+SBJson.m */,
+				A3581477153DF99C007C4E2E /* SBJson.h */,
+				A3581478153DF99C007C4E2E /* SBJsonParser.h */,
+				A3581479153DF99C007C4E2E /* SBJsonParser.m */,
+				A358147A153DF99C007C4E2E /* SBJsonStreamParser.h */,
+				A358147B153DF99C007C4E2E /* SBJsonStreamParser.m */,
+				A358147C153DF99C007C4E2E /* SBJsonStreamParserAccumulator.h */,
+				A358147D153DF99C007C4E2E /* SBJsonStreamParserAccumulator.m */,
+				A358147E153DF99C007C4E2E /* SBJsonStreamParserAdapter.h */,
+				A358147F153DF99C007C4E2E /* SBJsonStreamParserAdapter.m */,
+				A3581480153DF99C007C4E2E /* SBJsonStreamParserState.h */,
+				A3581481153DF99C007C4E2E /* SBJsonStreamParserState.m */,
+				A3581482153DF99C007C4E2E /* SBJsonStreamWriter.h */,
+				A3581483153DF99C007C4E2E /* SBJsonStreamWriter.m */,
+				A3581484153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.h */,
+				A3581485153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.m */,
+				A3581486153DF99C007C4E2E /* SBJsonStreamWriterState.h */,
+				A3581487153DF99C007C4E2E /* SBJsonStreamWriterState.m */,
+				A3581488153DF99C007C4E2E /* SBJsonTokeniser.h */,
+				A3581489153DF99C007C4E2E /* SBJsonTokeniser.m */,
+				A358148A153DF99C007C4E2E /* SBJsonUTF8Stream.h */,
+				A358148B153DF99C007C4E2E /* SBJsonUTF8Stream.m */,
+				A358148C153DF99C007C4E2E /* SBJsonWriter.h */,
+				A358148D153DF99C007C4E2E /* SBJsonWriter.m */,
+			);
+			name = SBJson;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A358143A153DF950007C4E2E /* ShortWords2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A358146E153DF950007C4E2E /* Build configuration list for PBXNativeTarget "ShortWords2" */;
+			buildPhases = (
+				A3581437153DF950007C4E2E /* Sources */,
+				A3581438153DF950007C4E2E /* Frameworks */,
+				A3581439153DF950007C4E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortWords2;
+			productName = ShortWords2;
+			productReference = A358143B153DF950007C4E2E /* ShortWords2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A358145B153DF950007C4E2E /* ShortWords2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3581471153DF950007C4E2E /* Build configuration list for PBXNativeTarget "ShortWords2Tests" */;
+			buildPhases = (
+				A3581457153DF950007C4E2E /* Sources */,
+				A3581458153DF950007C4E2E /* Frameworks */,
+				A3581459153DF950007C4E2E /* Resources */,
+				A358145A153DF950007C4E2E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3581462153DF950007C4E2E /* PBXTargetDependency */,
+			);
+			name = ShortWords2Tests;
+			productName = ShortWords2Tests;
+			productReference = A358145C153DF950007C4E2E /* ShortWords2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3581432153DF950007C4E2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ShortWords;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A3581435153DF950007C4E2E /* Build configuration list for PBXProject "ShortWords2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A3581430153DF950007C4E2E;
+			productRefGroup = A358143C153DF950007C4E2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A358143A153DF950007C4E2E /* ShortWords2 */,
+				A358145B153DF950007C4E2E /* ShortWords2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3581439153DF950007C4E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A358144A153DF950007C4E2E /* InfoPlist.strings in Resources */,
+				A3581453153DF950007C4E2E /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3581459153DF950007C4E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3581468153DF950007C4E2E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A358145A153DF950007C4E2E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3581437153DF950007C4E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A358144C153DF950007C4E2E /* main.m in Sources */,
+				A3581450153DF950007C4E2E /* ShortWordsAppDelegate.m in Sources */,
+				A3581456153DF950007C4E2E /* ShortWordsViewController.m in Sources */,
+				A358148E153DF99C007C4E2E /* NSObject+SBJson.m in Sources */,
+				A3581490153DF99C007C4E2E /* SBJsonParser.m in Sources */,
+				A3581492153DF99C007C4E2E /* SBJsonStreamParser.m in Sources */,
+				A3581494153DF99C007C4E2E /* SBJsonStreamParserAccumulator.m in Sources */,
+				A3581496153DF99C007C4E2E /* SBJsonStreamParserAdapter.m in Sources */,
+				A3581498153DF99C007C4E2E /* SBJsonStreamParserState.m in Sources */,
+				A358149A153DF99C007C4E2E /* SBJsonStreamWriter.m in Sources */,
+				A358149C153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.m in Sources */,
+				A358149E153DF99C007C4E2E /* SBJsonStreamWriterState.m in Sources */,
+				A35814A0153DF99C007C4E2E /* SBJsonTokeniser.m in Sources */,
+				A35814A2153DF99C007C4E2E /* SBJsonUTF8Stream.m in Sources */,
+				A35814A4153DF99C007C4E2E /* SBJsonWriter.m in Sources */,
+				A35814A8153DFA1B007C4E2E /* ShortWordsBrain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3581457153DF950007C4E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A358146B153DF950007C4E2E /* ShortWords2Tests.m in Sources */,
+				A358148F153DF99C007C4E2E /* NSObject+SBJson.m in Sources */,
+				A3581491153DF99C007C4E2E /* SBJsonParser.m in Sources */,
+				A3581493153DF99C007C4E2E /* SBJsonStreamParser.m in Sources */,
+				A3581495153DF99C007C4E2E /* SBJsonStreamParserAccumulator.m in Sources */,
+				A3581497153DF99C007C4E2E /* SBJsonStreamParserAdapter.m in Sources */,
+				A3581499153DF99C007C4E2E /* SBJsonStreamParserState.m in Sources */,
+				A358149B153DF99C007C4E2E /* SBJsonStreamWriter.m in Sources */,
+				A358149D153DF99C007C4E2E /* SBJsonStreamWriterAccumulator.m in Sources */,
+				A358149F153DF99C007C4E2E /* SBJsonStreamWriterState.m in Sources */,
+				A35814A1153DF99C007C4E2E /* SBJsonTokeniser.m in Sources */,
+				A35814A3153DF99C007C4E2E /* SBJsonUTF8Stream.m in Sources */,
+				A35814A5153DF99C007C4E2E /* SBJsonWriter.m in Sources */,
+				A35814A9153DFA1B007C4E2E /* ShortWordsBrain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3581462153DF950007C4E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A358143A153DF950007C4E2E /* ShortWords2 */;
+			targetProxy = A3581461153DF950007C4E2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3581448153DF950007C4E2E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3581449153DF950007C4E2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A3581451153DF950007C4E2E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3581452153DF950007C4E2E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A3581466153DF950007C4E2E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3581467153DF950007C4E2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A358146C153DF950007C4E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Miles Poindexter (MTSYXH55PQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "C02C0816-544D-461D-9E77-380C75BE0F1E";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A358146D153DF950007C4E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Miles Poindexter (MTSYXH55PQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "C02C0816-544D-461D-9E77-380C75BE0F1E";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A358146F153DF950007C4E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShortWords2/ShortWords2-Prefix.pch";
+				INFOPLIST_FILE = "ShortWords2/ShortWords2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A3581470153DF950007C4E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShortWords2/ShortWords2-Prefix.pch";
+				INFOPLIST_FILE = "ShortWords2/ShortWords2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A3581472153DF950007C4E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShortWords2.app/ShortWords2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShortWords2/ShortWords2-Prefix.pch";
+				INFOPLIST_FILE = "ShortWords2Tests/ShortWords2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A3581473153DF950007C4E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShortWords2.app/ShortWords2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShortWords2/ShortWords2-Prefix.pch";
+				INFOPLIST_FILE = "ShortWords2Tests/ShortWords2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3581435153DF950007C4E2E /* Build configuration list for PBXProject "ShortWords2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A358146C153DF950007C4E2E /* Debug */,
+				A358146D153DF950007C4E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A358146E153DF950007C4E2E /* Build configuration list for PBXNativeTarget "ShortWords2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A358146F153DF950007C4E2E /* Debug */,
+				A3581470153DF950007C4E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3581471153DF950007C4E2E /* Build configuration list for PBXNativeTarget "ShortWords2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3581472153DF950007C4E2E /* Debug */,
+				A3581473153DF950007C4E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3581432153DF950007C4E2E /* Project object */;
+}
